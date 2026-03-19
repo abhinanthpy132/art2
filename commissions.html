@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -44,7 +45,9 @@
     <div class="commission-hero" style="background-image: url('assets/images/cp13.jpeg');">
         <div class="hero-content">
             <h1>BOOK A COMMISSION</h1>
-
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-hero">BOOK NOW</a>
+            </div>
         </div>
     </div>
 
@@ -128,9 +131,8 @@
                         <p>A lot of my previous commissions are of pets who have sadly passed. If this is the case with
                             your pet then send me whatever photos you have and I will see what I can do.</p>
                     </div>
-                    <div class="info-image-grid">
-                        <img src="assets/images/cp20.jpeg" alt="Good Photo Example">
-                        <img src="assets/images/cp21.jpeg" alt="Scruffy Dog Example">
+                    <div class="info-image-grid" style="grid-template-columns: 1fr;">
+                        <img src="assets/images/reference_comparison.jpg" alt="Reference Photo vs Art Comparison">
                     </div>
                 </div>
             </section>
@@ -138,12 +140,9 @@
             <!-- Steps 3, 4, 5 -->
             <section class="commission-section">
                 <!-- Step 3 (Image Left) -->
-                <div class="step-block">
+                <div class="step-block text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
                     <h3 class="step-title">STEP 3 : SECURING YOUR BOOKING</h3>
-                    <div class="info-grid">
-                        <div class="info-image">
-                            <img src="assets/images/cp23.jpeg" alt="Honeycomb Art">
-                        </div>
+                    <div>
                         <div class="info-text">
                             <p>Once you've chosen your portrait size and reference photo, it is time to secure your
                                 booking. If
@@ -160,9 +159,9 @@
                 </div>
 
                 <!-- Step 4 (Image Right) -->
-                <div class="step-block">
+                <div class="step-block text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
                     <h3 class="step-title">STEP 4 : CREATING YOUR PORTRAIT</h3>
-                    <div class="info-grid">
+                    <div>
                         <div class="info-text">
                             <p>If you would like to stay updated through the creation of your portrait then I can send
                                 you
@@ -173,19 +172,13 @@
                             <p>Once you are 100% happy with the final drawing, the remaining 50% payment can be made.
                             </p>
                         </div>
-                        <div class="info-image">
-                            <img src="assets/images/cp24.jpeg" alt="Work in Progress Art">
-                        </div>
                     </div>
                 </div>
 
                 <!-- Step 5 (Image Left) -->
-                <div class="step-block">
+                <div class="step-block text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
                     <h3 class="step-title">STEP 5 : DELIVERY & REVIEW</h3>
-                    <div class="info-grid">
-                        <div class="info-image">
-                            <img src="assets/images/cp25.jpeg" alt="Books and Bird">
-                        </div>
+                    <div>
                         <div class="info-text">
                             <p><strong>DELIVERY:</strong> Once I have received your final payment, I will package your
                                 drawing
@@ -233,7 +226,7 @@
 
             <section id="contact" class="text-center commission-cta">
                 <h3>READY TO BOOK?</h3>
-                <a href="mailto:hello@shani.com" class="btn-primary">EMAIL ME TO BOOK</a>
+                <a href="mailto:shanimp@gmail.com" class="btn-primary">EMAIL ME TO BOOK</a>
             </section>
         </div>
     </main>
@@ -259,7 +252,7 @@
             </div>
             <div class="footer-col">
                 <h4>contact</h4>
-                <p>hello@shani.com</p>
+                <p>shanimp@gmail.com</p>
                 <div class="social-icons">
                     <a href="#">FB</a>
                     <a href="#">IG</a>
@@ -268,6 +261,19 @@
             </div>
         </div>
     </footer>
+    <!-- Instagram Floating Button -->
+    <a href="https://instagram.com/"
+        class="instagram-float fixed bottom-24 right-6 md:bottom-28 md:right-8 w-16 h-16 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-50 hover:scale-110"
+        target="_blank" aria-label="Visit our Instagram">
+        <i class="fab fa-instagram text-3xl"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/91950000000"
+        class="whatsapp-float fixed bottom-6 right-6 md:bottom-8 md:right-8 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce"
+        target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 </body>
 
 </html>
